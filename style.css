@@ -1,0 +1,15 @@
+*{
+    margin:0;
+}
+
+.wrapper{
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg); 
+    color:#ffffff;
+    background-size: cover;
+    height: 876px;
+    padding:40px 170px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
