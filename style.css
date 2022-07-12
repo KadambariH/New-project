@@ -1,16 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root{
+    --button-background-color:#FE5303;
+    --text-color:white;
+    --section-heading-color:#bdbdbd;
+}
+
 * {
     margin: 0;
 }
+body{
+    color:var(--text-color);
+    font-family: 'poppins';
+}
 
-.wrapper {
-    background-image: url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg);
-    color: #ffffff;
+.home {
+    background: url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg);
+    box-sizing: border-box;
+    /* position: absolute; */
     background-size: cover;
-    height: 876px;
+    height: 800px;
+    width: 1440px;
     padding: 40px 170px;
 }
+.company-name{
+    font-size: 24px;
+    font-weight: 600;
+}
+
 
 header {
     display: flex;
     justify-content: space-between;
+}
+
+button{
+    background-color: var(--button-background-color);
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Playfair display';
+    font-size:64px;
+    font-weight: 700;
+    line-height: 85px;
+    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 65px;
+}
+.fa-circle-play{
+    font-size:36px;
+}
+.adventure{
+    display: flex;
+    align-items: center;
+}
+.adventure>span{
+    margin-right:10px;
+}
+
+
+form{
+    margin-top:127px;
+    display:flex;
+}
+
+.form-group{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.form-parent{
+    display: flex;
+    border:2px solid;
+    border-radius: 5px;;
+    padding:15px 20px;
+    background-color: var(--text-color);
+    width:600px;
+}
+.form-group>label{
+color:var(--section-heading-color);
+font-size: 12px;
+font-weight: 700;
+}
+
+input[type='date'],select{
+    border:none;
+    margin-top:10px;
+}
+
+.check-out{
+    border-right:1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    padding:0 40px;
+}
+.form-group:nth-child(1)
+{
+    padding-right: 80px;
+}
+.form-group:nth-child(3)
+{
+    padding-left: 80px;
+}
+
+
+/**About us section css**/
+.about-us{
+    color:black;
+    padding:100px 170px;
+}
+.about-us>span{
+    font-size: 16px;
+    font-weight:600;
+    color:var(--section-heading-color);
+}
+.about-us-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about-us-section>div{
+    width: 523px;
+    margin-right: 40px;
+}
+.about-us-section>div>h2{
+    font-family: 'Playfair display';
+    font-size: 48px;
+    line-height: 63px;
+    font-weight: 700;
+    color: #333333;
+}
+.about-us-section p{
+    font-size:16px;
+    line-height: 24px;
+    color:#828282;
+    padding:40px 0;
+}
+
+/* about us section css end */
+
+/* Accomodation section css start */
+
+.accomodation{
+    padding:100px 170px;
+    color:black;
+}
+
+.accomodation-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.accomodation>span{
+    font-size:16px;
+    font-weight: 600;
+    color:var(--section-heading-color);
+    text-transform: uppercase;
+}
+.accomodation-nav>h2{
+    font-family: 'Playfair display';
+    font-size: 48px;
+    line-height: 63px;
+    font-weight:700;
+    color:#333333;
+    margin-top:20px;
+}
+.accomodation-pictures{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0;
+}
+
+.accomodation-pictures img{
+    border-radius:12px;
+}
+.accomodation-pictures>div{
+    position:relative;
+}
+.price-info{
+    color:var(--text-color);
+    bottom:20px;
+    left:20px;
 }

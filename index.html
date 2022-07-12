@@ -2,23 +2,25 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+    <meta name="vewport" content="width-device-width, initial-scale-1.0">
     <title>Hotel-Booking</title>
     <link href="./style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
 </head>
 
 <body>
     <div class="wrapper">
+
+        <div class="home">
+
         <header>
             <div>
                 <i class="fa-solid fa-plane"></i>
-                <span>Highmos</span>
+                <span class="company-name">Highmos</span>
             </div>
             <div>
                 <i class="fa-solid fa-bookmark"></i>
@@ -27,28 +29,52 @@
         </header>
         <main>
             <h1>Travel is the only thing you buy that makes you richer</h1>
-            <span>Adventure</span>
-            <i class="fa-solid fa-circle-play"></i>
+            <div class="adventure">
+                <span>Adventure</span>
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
         </main>
         <footer>
             <form>
-                <label>Check in</label>
-                <input type="date" id="checkin" name="checkin" />
-                <label>Check out</label>
-                <input type="date" id="checkout" name="checkout" />
-                <label>Person</label>
-                <select>
-                    <option>1 adult</option>
-                    <option>2 adults</option>
-                    <option>3 adults</option>
-                </select>
+                <div class="form-parent">
+                    <div class="form-group">
+                        <label>Check in</label>
+                        <input type="date" id="checkin" name="checkin" />
+                </div>
+                <div class="form-group check-out">
+                    <label>Check out</label>
+                    <input type="date" id="checkout" name="checkout" />
+                </div>
+                <div class="form-group">
+                    <label>Person</label>
+                    <select>
+                        <option>1 adult</option>
+                        <option>2 adults</option>
+                        <option>3 adults</option>
+                    </select>
+                </div>
+                </div>
+                        <button>Book Now</button>
             </form>
-            <button type="submit">Book Now</button>
         </footer>
-
-
     </div>
 
+
+    <div class="about-us">
+        <span>About us</span>
+        <div class="about-us-section">
+            <div>
+                <h2>People don't take trips, trips take people</h2>
+                <p>If you think your country does everything the right way and is revered by other nations, you’ll definitely have those notions put to the test when you enter another country.</p>
+                <img src="./view.png" alt="view-gallery-1" width="523" height="630"/>
+            </div>
+            <div>
+                <img src="./nature.png"  alt="view-gallery-2" width="523" height="556"/>
+                <p>Have you ever felt the rain on your skin in multiple countries? I have, and I’m here to tell you that it’s always a thrilling sensation each time it happens somewhere new. By traveling, I’ve learned to appreciate things that I would normally ignore.</p>
+                <p>Just like everyone else, I spend some of my days sitting on a couch watching television. Of course, these aren’t the moments that define me, nor are they what I think of when wandering through my favorite memories.</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
