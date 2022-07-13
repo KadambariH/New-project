@@ -1,30 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-:root{
-    --button-background-color:#FE5303;
-    --text-color:white;
-    --section-heading-color:#bdbdbd;
+:root {
+    --button-background-color: #FE5303;
+    --text-color: white;
+    --section-heading-color: #bdbdbd;
 }
 
 * {
     margin: 0;
 }
-body{
-    color:var(--text-color);
+
+body {
+    color: var(--text-color);
     font-family: 'poppins';
 }
 
 .home {
     background: url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg);
     box-sizing: border-box;
-    /* position: absolute; */
     background-size: cover;
-    height: 800px;
+    height: 600px;
     width: 1440px;
-    padding: 40px 170px;
+    padding: 30px 170px;
 }
-.company-name{
+
+.fa-plane {
+    font-size: 20px;
+}
+
+.company-name {
     font-size: 24px;
     font-weight: 600;
 }
@@ -35,155 +40,303 @@ header {
     justify-content: space-between;
 }
 
-button{
+button {
     background-color: var(--button-background-color);
     margin-left: 20px;
+    border: 0;
+    border: 1px;
     border-radius: 10px;
 }
 
-h1{
+.Revervations {
+    color: var(--text-color);
+    background-color: #FE5303;
+    margin-left: 20px;
+    border: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px;
+}
+
+
+h1 {
     font-family: 'Playfair display';
-    font-size:64px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 85px;
     max-width: 600px;
-    margin-top: 80px;
-    margin-bottom: 65px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.fa-circle-play{
-    font-size:36px;
+
+.fa-circle-play {
+    font-size: 30px;
 }
-.adventure{
+
+.adventure {
     display: flex;
     align-items: center;
 }
-.adventure>span{
-    margin-right:10px;
+
+.adventure>span {
+    margin-right: 10px;
 }
 
-
-form{
-    margin-top:127px;
-    display:flex;
+form {
+    margin-top: 60px;
+    display: flex;
 }
 
-.form-group{
-    
+.form-group {
+
     display: flex;
     flex-direction: column;
 }
 
-.form-parent{
+.form-parent {
     display: flex;
-    border:2px solid;
-    border-radius: 5px;;
-    padding:15px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
     background-color: var(--text-color);
-    width:600px;
-}
-.form-group>label{
-color:var(--section-heading-color);
-font-size: 12px;
-font-weight: 700;
+    width: 600px;
 }
 
-input[type='date'],select{
-    border:none;
-    margin-top:10px;
+.form-group>label {
+    color: var(--section-heading-color);
+    font-size: 12px;
+    font-weight: 700;
 }
 
-.check-out{
-    border-right:1px solid lightgrey;
+input[type='date'],
+select {
+    border: none;
+    margin-top: 10px;
+}
+
+.check-out {
+    border-right: 1px solid lightgrey;
     border-left: 1px solid lightgrey;
-    padding:0 40px;
+    padding: 0 40px;
 }
-.form-group:nth-child(1)
-{
+
+.form-group:nth-child(1) {
     padding-right: 80px;
 }
-.form-group:nth-child(3)
-{
+
+.form-group:nth-child(3) {
     padding-left: 80px;
 }
 
 
 /**About us section css**/
-.about-us{
-    color:black;
-    padding:100px 170px;
+.about-us {
+    color: black;
+    padding: 100px 170px;
 }
-.about-us>span{
+
+.about-us>span {
     font-size: 16px;
-    font-weight:600;
-    color:var(--section-heading-color);
+    font-weight: 600;
+    color: var(--section-heading-color);
 }
-.about-us-section{
+
+.about-us-section {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-.about-us-section>div{
+.about-us-section>div {
     width: 523px;
     margin-right: 40px;
 }
-.about-us-section>div>h2{
-    font-family: 'Playfair display';
+
+.about-us-section>div>h2 {
+    font-family: 'Playfair Display';
     font-size: 48px;
     line-height: 63px;
     font-weight: 700;
     color: #333333;
 }
-.about-us-section p{
-    font-size:16px;
+
+.about-us-section p {
+    font-size: 16px;
     line-height: 24px;
-    color:#828282;
-    padding:40px 0;
+    color: #828282;
+    padding: 40px 0;
 }
 
 /* about us section css end */
 
+
 /* Accomodation section css start */
 
-.accomodation{
-    padding:100px 170px;
-    color:black;
+.accommodation {
+    /* padding: 50px 170px; */
+    padding: 15px 140px;
+    color: black;
 }
 
-.accomodation-nav{
+.accommodation>span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--section-heading-color);
+    text-transform: uppercase;
+}
+
+.details {
+    color: red;
+    font-size: 12px;
+}
+
+.accommodation-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
-.accomodation>span{
-    font-size:16px;
+
+.accommodation-nav>h2 {
+    font-family: 'Playfair Display';
+    font-size: 30px;
     font-weight: 600;
-    color:var(--section-heading-color);
-    text-transform: uppercase;
-}
-.accomodation-nav>h2{
-    font-family: 'Playfair display';
-    font-size: 48px;
-    line-height: 63px;
-    font-weight:700;
-    color:#333333;
-    margin-top:20px;
-}
-.accomodation-pictures{
-    display: flex;
-    justify-content: space-between;
-    margin:50px 0;
+    color: #333333;
+    margin-top: 20px;
 }
 
-.accomodation-pictures img{
-    border-radius:12px;
+.accommodation-pictures {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 50px 0;
 }
-.accomodation-pictures>div{
-    position:relative;
+
+.accommodation-pictures img {
+    border-radius: 12px;
+    margin-right: 40px;
 }
-.price-info{
-    color:var(--text-color);
-    bottom:20px;
-    left:20px;
+
+/* .accommodation-pictures>img {
+    position: relative;
+} */
+
+.sea_view {
+    position: absolute;
+    font-family: 'Playfair Display';
+    width: 237.8px;
+    height: 32px;
+    left: 200.07px;
+    top: 2150px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    /* bottom:40px; */
+    /* left:30px; */
+}
+
+.Whole-House{
+    color: var(--text-color);
+    position: absolute;
+    width: 213.31px;
+    height: 32px;
+    right: 233px;
+    top: 2145px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.Minimal-Room {
+    color: var(--text-color);
+    position: absolute;
+    width: 213.31px;
+    height: 32px;
+    left: 180px;
+    top: 2495px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.Rural-House{
+    color: var(--text-color);
+    position: absolute;
+    width: 213.31px;
+    height: 32px;
+    left: 550px;
+    top: 2490px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.Modern-House{
+    color: var(--text-color);
+    /* color:black; */
+    position: absolute;
+    width: 213.31px;
+    height: 32px;
+    right: 210px;
+    top: 2500px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.Testimonials {
+    color: black;
+    padding: 25px 170px;
+}
+
+.Testimonials>span {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--section-heading-color);
+}
+
+.Testimonials>h2 {
+
+    font-family: 'Playfair Display';
+    padding: 10px 0 20px;
+    font-size: 35px;
+    line-height: 64px;
+}
+
+.Testimonials>h2>span {
+    color: #FE5303;
+}
+
+.Reviews {
+    display: flex;
+    justify-content: center;
+}
+
+.Reviews>div>h4 {
+    font-family: 'Playfair Display';
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.Reviews>div>p {
+    font-family: 'Playfair Display';
+    border: 0;
+    border: 1px solid white;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.user>img {
+    margin-top: 30px;
+    border-radius: 100px;
 }
